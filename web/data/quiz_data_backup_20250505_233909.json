@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "manualCode": "PTA-Advisory",
+    "section": "Water Supply Basics",
+    "question": "According to the advisory, which of the following can be indicated as a source of water for a public toilet?",
+    "options": [
+      "Water connection from Municipality",
+      "Own bore well",
+      "Water tankers",
+      "All of the above"
+    ],
+    "correctAnswerIndex": 3,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source lists Water connection from Municipality, Own bore well, and Water tankers as relevant sources of water for a public toilet."
+  },
+  {
+    "id": 2,
+    "manualCode": "PTA-Advisory",
+    "section": "Waste Disposal",
+    "question": "Based on the source, who can be responsible for cleaning of septic tanks?",
+    "options": [
+      "ULB",
+      "Private",
+      "Owner",
+      "Any of the above"
+    ],
+    "correctAnswerIndex": 3,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source indicates that the responsibility for cleaning septic tanks can fall under ULB, Private, or Owner."
+  },
+  {
+    "id": 3,
+    "manualCode": "WSP-Models",
+    "section": "Water Quality Modeling",
+    "question": "Which water quality model is described as a steady-state one-dimensional model for simulating pollutant transport and transformation in well-mixed branching streams and lakes?",
+    "options": [
+      "HEC-5Q",
+      "WQRRS",
+      "QUAL2E",
+      "SWMM"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source describes QUAL2E as a steady-state one-dimensional model used for simulating pollutant transport and transformation in well-mixed branching streams and lakes."
+  },
+  {
+    "id": 4,
+    "manualCode": "EnggManual-PartA",
+    "section": "Glossary/Abbreviations",
+    "question": "What does the abbreviation LPCD stand for in the context of water supply?",
+    "options": [
+      "Litres per Connection per Day",
+      "Litres per Container per Day",
+      "Litres per Capita per Day",
+      "Litres per Community per Day"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source defines LPCD as the actual quantity of drinking water in litre per capita per day provided to the population. Sources and also use LPCD in relation to quantity consumed per household."
+  },
+  {
+    "id": 5,
+    "manualCode": "JJM-OG",
+    "section": "JJM Implementation",
+    "question": "According to the JJM Operational Guidelines and WQMS Framework, which of the following is a designated role for the VWSC/Pani Samiti?",
+    "options": [
+      "Designing regional water treatment plants",
+      "Setting national water quality standards",
+      "Conducting water quality tests using FTKs",
+      "Approving State-level water supply schemes"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Sources,,, and state that the VWSC/Pani Samiti is responsible for facilitating/conducting water quality tests using FTKs and training local community members."
+  },
+  {
+    "id": 6,
+    "manualCode": "JJM-OG",
+    "section": "Village Planning",
+    "question": "In a Village Action Plan (VAP), what percentage of the water supply is estimated to be generated as greywater?",
+    "options": [
+      "0.45",
+      "0.55",
+      "0.65",
+      "0.75"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source estimates greywater generated as 65% of the water supply in the context of a Village Action Plan."
+  },
+  {
+    "id": 7,
+    "manualCode": "O&M-RuralWSS",
+    "section": "Water Quality Monitoring",
+    "question": "How is the pH value of water typically measured using pH booklets, as described in the manual?",
+    "options": [
+      "Using an electrical meter",
+      "By titration",
+      "Using visual color comparison",
+      "By heating the sample"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source describes using pH paper from a booklet, adding a water sample, and comparing the resulting color change to a chart provided in the booklet for visual color comparison to determine pH."
+  },
+  {
+    "id": 8,
+    "manualCode": "WQMS-Framework",
+    "section": "Sanitary Survey",
+    "question": "What is the primary purpose of conducting a Sanitary Inspection of a water supply facility?",
+    "options": [
+      "To measure the depth of the water source",
+      "To perform minor plumbing repairs",
+      "To identify actual and potential sources of microbiological contamination",
+      "To assess the electrical consumption of the facility"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Sources,, and define a sanitary inspection as an on-site inspection to identify actual and potential sources of microbiological contamination and evaluate the system's functionality and environment."
+  },
+  {
+    "id": 9,
+    "manualCode": "WQMS-Framework",
+    "section": "Water Quality Testing",
+    "question": "What is the required minimum frequency for testing all drinking water sources, including public and private sources, at the village level using Field Test Kits (FTKs)?",
+    "options": [
+      "At least once every six months",
+      "At least once a year",
+      "At least once a month",
+      "Only when contamination is suspected"
+    ],
+    "correctAnswerIndex": 2,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Sources and mandate that Gram Panchayats/VWSC must ensure 100% drinking water sources under their jurisdiction are tested using FTK at least once in a month."
+  },
+  {
+    "id": 10,
+    "manualCode": "JJM-Amendments",
+    "section": "Project Planning Documentation",
+    "question": "According to the checklist provided for DPRs in the JJM Operational Guidelines, which of the following is listed as a permissible expenditure?",
+    "options": [
+      "Payment of salary to permanent staff",
+      "Construction/renovation of buildings",
+      "Operation and maintenance",
+      "Expenditure beyond approved cost"
+    ],
+    "correctAnswerIndex": 1,
+    "marks": {
+      "positive": 1,
+      "negative": -0.25
+    },
+    "explanation": "Source lists \"Construction/renovation of buildings\" as a permissible expenditure in the checklist of items to be considered."
+  }
+]

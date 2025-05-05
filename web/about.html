@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | H2OMCQHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+  
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">H2OMCQHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manuals.html">Manuals</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>About H2OMCQHub</h1>
+
+    <section class="about-section">
+      <p>
+        <strong>H2OMCQHub</strong> is a free and open-source learning platform dedicated to professionals, engineers, and students in the water supply and sanitation sector. Built under the vision of <strong>The Krittika Project</strong>, it aims to simplify access to over 25,000 MCQs curated from official manuals, advisories, and operational guidelines issued by CPHEEO, MOHUA, Ministry of Jal Shakti, and SBM(G).
+      </p>
+
+      <p>
+        The platform encourages self-paced, focused learning across manuals, categorized by topic and year, with features such as:
+        <ul>
+          <li>Manual-wise MCQ practice with explanations</li>
+          <li>Bookmarking for revision</li>
+          <li>Progress tracking and scores</li>
+          <li>Instant feedback and certificate generation (coming soon)</li>
+        </ul>
+      </p>
+
+      <p>
+        Whether you're a field engineer preparing for a departmental review or a student aiming to master public infrastructure standards — this platform is for you.
+      </p>
+
+      <p class="credit-note">
+        This initiative is part of <a href="https://sites.google.com/view/thekrittikaproject" target="_blank"><strong>The Krittika Project</strong></a> — an open knowledge movement dedicated to building free, AI-supported, and GIS-enabled public utilities with purpose and empathy.
+      </p>
+
+      <p style="text-align:center; font-size: 0.9em; color: #666; margin-top: 40px;">
+        © The Krittika Project by Amaljit Bharali | ☄️ Krittika Guides Me | The Rover Builds | 2025
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // Highlight active nav link
+    const links = document.querySelectorAll(".nav-links a");
+    const current = window.location.pathname.split("/").pop();
+  
+    links.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H2OMCQHub | Manual Selection</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+  
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">H2OMCQHub</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="manuals.html">Manuals</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      
+
+  <main class="container center">
+    <h1>Select a Manual to Begin</h1>
+    <p class="tagline">Explore MCQs grouped by official water & sanitation guidelines</p>
+
+    <div id="manual-list" class="manual-grid">Loading manuals...</div>
+
+    <footer style="text-align:center; font-size: 0.9em; color: #666; margin-top: 40px;">
+      © The Krittika Project by Amaljit Bharali | ☄️ Krittika Guides Me | The Rover Builds | 2025
+    </footer>
+  </main>
+
+  <script>
+    // Fetch manuals.json and display cards
+    fetch("data/manuals.json")
+      .then(res => res.json())
+      .then(data => {
+        const grid = document.getElementById("manual-list");
+        grid.innerHTML = "";
+
+        data.forEach(manual => {
+          const card = document.createElement("a");
+          card.href = `quiz.html?manualCode=${manual.code}`;
+          card.className = "manual-card";
+          card.innerHTML = `
+            <h3>${manual.title}</h3>
+            <p><strong>${manual.org}</strong> | ${manual.year}</p>
+          `;
+          grid.appendChild(card);
+        });
+      });
+  </script>
+
+    <script>
+    // Highlight active nav link
+    const links = document.querySelectorAll(".nav-links a");
+    const current = window.location.pathname.split("/").pop();
+  
+    links.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        link.classList.add("active");
+      }
+    });
+    </script>
+</body>
+</html>

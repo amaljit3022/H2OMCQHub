@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H2OMCQHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">H2OMCQHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manuals.html">Manuals</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
+
+  <div style="padding: 10px 24px;">
+    <a href="index.html" class="back-btn">← Back to Manual Selection</a>
+  </div>
+  
+
+  <main class="container">
+    <h1 id="quiz-heading">H2OMCQHub</h1>
+    <h2 id="score">Score: 0 / 0</h2>
+    <h3 id="manual-title" class="manual-title">Loading manual...</h3>
+
+
+    <section id="quiz-section">
+      <div class="question-header">
+        <p id="question-text">Loading question...</p>
+        <button id="bookmark-btn" class="bookmark" title="Toggle Bookmark">☆</button>
+      </div>
+      <ul id="option-list" class="option-list"></ul>
+    </section>
+
+    <button id="next-btn">Next</button>
+
+    <footer>
+      <p style="text-align:center; font-size: 0.9em; color: #666; margin-top: 40px;">
+        © The Krittika Project by Amaljit Bharali | ☄️ Krittika Guides Me | The Rover Builds | 2025
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+
+  
+<script>
+  // Highlight active nav link
+  const links = document.querySelectorAll(".nav-links a");
+  const current = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === current) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+[2025-05-05 23:35:30] === Running generate_all.py ===
+[2025-05-05 23:35:30] 🔄 quiz_data.json backed up to G:\My Drive\03 Work\Projects\H2OMCQHub\H2OMCQHub_web\web\data\quiz_data_backup_20250505_233530.json
+[2025-05-05 23:35:30] 🔄 manuals.json backed up to G:\My Drive\03 Work\Projects\H2OMCQHub\H2OMCQHub_web\web\data\manuals_backup_20250505_233530.json
+[2025-05-05 23:35:31] ✅ Created quiz_data.json with 10 questions.
+[2025-05-05 23:35:31] ✅ Created manuals.json with 7 entries.
+[2025-05-05 23:35:31] === Script complete ===
+
+[2025-05-05 23:39:09] Backed up quiz_data.json → G:\My Drive\03 Work\Projects\H2OMCQHub\H2OMCQHub_web\web\data\quiz_data_backup_20250505_233909.json
+[2025-05-05 23:39:09] Backed up manuals.json → G:\My Drive\03 Work\Projects\H2OMCQHub\H2OMCQHub_web\web\data\manuals_backup_20250505_233909.json
+[2025-05-05 23:39:09] ✅ Created quiz_data.json with 10 questions.
+[2025-05-05 23:39:09] ✅ Created manuals.json with 7 entries.

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manuals | H2OMCQHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">H2OMCQHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manuals.html">Manuals</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search manuals by title, org, or year..."
+    style="width: 100%; padding: 12px; font-size: 1em; margin: 20px 0; border-radius: 6px; border: 1px solid #ccc;"
+  />
+
+  <main class="container">
+    <h1>List of Official Manuals & Guidelines</h1>
+    <p class="tagline">From CPHEEO, MOHUA, Jal Shakti & SBM(G)</p>
+
+    <div id="manual-list" class="manual-grid">Loading manuals...</div>
+
+    <footer style="text-align:center; font-size: 0.9em; color: #666; margin-top: 40px;">
+      © The Krittika Project by Amaljit Bharali | ☄️ Krittika Guides Me | The Rover Builds | 2025
+    </footer>
+  </main>
+
+  <script>
+    let manuals = [];
+  
+    fetch("data/manuals.json")
+      .then(res => res.json())
+      .then(data => {
+        manuals = data;
+        displayManuals(data);
+      });
+  
+    function displayManuals(list) {
+      const grid = document.getElementById("manual-list");
+      grid.innerHTML = "";
+
+      list.forEach(manual => {
+        const card = document.createElement("div");
+        card.className = "manual-card";
+        card.innerHTML = `
+          <h3>${manual.title}</h3>
+          <p><strong>${manual.org}</strong> | ${manual.year}</p>
+          <a class="external-btn" href="#" onclick="alert('🔗 Link will be added soon'); return false;">External Link</a>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById("searchInput").addEventListener("input", e => {
+      const query = e.target.value.toLowerCase();
+      const filtered = manuals.filter(manual =>
+        manual.title.toLowerCase().includes(query) ||
+        manual.org.toLowerCase().includes(query) ||
+        manual.year.toString().includes(query)
+      );
+      displayManuals(filtered);
+    });
+  </script>
+
+  <script>
+    // Highlight active nav link
+    const links = document.querySelectorAll(".nav-links a");
+    const current = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>
